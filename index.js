@@ -119,8 +119,7 @@ function endGame() {
   clearInterval(gameInterval);
   //ROCKS.filter(e => { GAME.removeChild(e); return false; });
   for (let i = 0; i < ROCKS.length; i++) {
-    //GAME.removeChild(ROCKS[i]);
-     ROCKS[i].remove();
+    GAME.removeChild(ROCKS[i]);
   }
   window.removeEventListener('keydown', moveDodger);
   alert("YOU LOSE!");
